@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#encabezado {
+    background-color: rgb(53, 95, 156);
+    height: 80px;
+}
+
+#navegacion {
+    float: left;
+    height: 20px;
+    padding: 25px 20px;
+}
+
+#navegacion > ul {
+    margin: 0;
+    padding: 0;
+}
+
+#navegacion > ul li {
+    display: inline-flex;
+}
+
+#navegacion > ul a {
+    padding: 0 30px;
+    color: rgb(221, 245, 11);
+    
+}
+#mensaje {
+    float: right;
+    height: 50px;
+    padding: 1px 10px;
+    color: white;
+}
+
+.contenedor {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#principal {
+    float: center;
+    width: 100%;
+    background-color: rgb(53, 95, 156);
+}
+#principal_h1 {
+    font-size: 2rem;
+    color: rgb(255, 250, 251);
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-75%, -75%);
+}
+
+#lateral {
+    float: left;
+    width: 100%;
+    background-color: rgb(53, 95, 156);
+    height: 550px; /* Aqui tamanio de lateral */
+}
+
+#lateral-1 {
+    float: center;
+    width: 100%;
+    background-color: rgb(53, 95, 156);
+    height: 550px; /* Aqui tamanio de lateral */
+}
+
+#lateral-2 {
+    float: right;
+    width: 100%;
+    background-color: rgb(53, 95, 156);
+    height: 550px; /* Aqui tamanio de lateral */
+}
+
+#fondo {
+    width: 100%;
+}
+
+
+#lateral {
+    padding: 50px 40px;
+}
+
+#lateral-1 {
+    padding: 50px 40px;
+}
+
+#lateral-2 {
+    padding: 50px 40px;
+}
+.separacion:nth-child(1) {
+    height: 290px;
+}
+
+.separacion:nth-child(2) {
+    height: 500px;
+}
+
+#lateral h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#formulariologin input {
+    width: 100%;
+}
+
+form input {
+    height: 32px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+form button,
+form select {
+    height: 32px;
+}
+
+#formularioconversor input {
+    width: 60%;
+}
+
+#formularioconversor button {
+    width: 40%;
+}
+
+#ingresar,
+#convertir {
+    background-color: rgb(32, 92, 255);
+    color: white;
+    border: 0;
+}
+
+#registrarse {
+    background-color: rgb(87, 85, 190);
+    color: white;
+    border: 0;
+}
+
+/* iconos */
+.bi-controller {
+    color: rgb(239, 239, 247);
+    font-size: 40px;
+}
+.bi-device-ssd {
+    color: rgb(234, 234, 240);
+    font-size: 40px;
+}
+.bi-dpad-fill {
+    color: rgb(239, 239, 243);
+    font-size: 40px;
+}
+.bi-discord {
+    color: rgb(241, 241, 247);
+    font-size: 40px;
+}
+.bi-display {
+    color: rgb(227, 227, 233);
+    font-size: 40px;
+}
+
+#convertir {
+    margin-bottom: 10px;
+}
+
+
+/* Contenerdor para flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+  }
+   
+  /* Estilo para el menú de navegación */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(76, 22, 223);
+    padding: 20px;
+  }
+   
+  /* Estilo para la lista del menú de navegación */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+   
+  /* Estilo para el contenido */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #4266da;
+    padding: 10px;
+  }
+   
+  /* Estilo para el footer */
+  footer {
+    background-color: rgb(46, 43, 221);
+    padding: 10px;
+    text-align: center;
+    color: rgb(204, 203, 214);
+  }
+   
+  /* Diseño adaptable; hace que el menú y el contenido (dentro de la sección) se ubiquen uno encima del otro en lugar de uno al lado del otro */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
